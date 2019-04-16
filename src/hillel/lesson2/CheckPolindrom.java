@@ -12,18 +12,19 @@ public class CheckPolindrom
 
   private static String getStartCheck(String polindrom)
   {
-    String tempPolindrom = polindrom.replaceAll("\\s+","");
-    char tempOrigin [] = tempPolindrom.toCharArray();
-    char tempCopy [] = tempPolindrom.toCharArray();
-    for (int i =0, j=tempPolindrom.length()-1; i <tempPolindrom.length()-1 && j>0; i++, j-- )
+    String tempPolindrom = polindrom.replaceAll("\\s+", "");
+    char tempOrigin[] = tempPolindrom.toCharArray();
+    char tempCopy[] = tempPolindrom.toCharArray();
+    for (int i = 0, j = tempPolindrom.length() - 1; i < tempPolindrom.length() - 1 && j > 0; i++, j--)
     {
       if (tempCopy[i] == tempOrigin[j])
       {
-      }else
+      }
+      else
       {
         return polindrom = "данная строка не полиндром";
       }
     }
-      return polindrom = "данная строка полиндром";
+    return polindrom = "данная строка полиндром";
   }
 }
