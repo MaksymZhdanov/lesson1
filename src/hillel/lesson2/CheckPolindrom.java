@@ -6,18 +6,18 @@ public class CheckPolindrom
 {
   public static void main(String[] args)
   {
-    String polindrom = "ароза упала на лапу азора";
+    String polindrom = "12 Ароза упала на лапу Азора21";
     System.out.println(getStartCheck(polindrom));
   }
 
   private static String getStartCheck(String polindrom)
   {
     String tempPolindrom = polindrom.replaceAll("\\s+", "");
+    tempPolindrom = tempPolindrom.toLowerCase();
     char tempOrigin[] = tempPolindrom.toCharArray();
-    char tempCopy[] = tempPolindrom.toCharArray();
     for (int i = 0, j = tempPolindrom.length() - 1; i < tempPolindrom.length() - 1 && j > 0; i++, j--)
     {
-      if (tempCopy[i] == tempOrigin[j])
+      if (tempOrigin[i] == tempOrigin[j])
       {
       }
       else
