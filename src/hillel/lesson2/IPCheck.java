@@ -4,13 +4,45 @@ public class IPCheck
 {
   public static void main(String[] args)
   {
-    String ip = "192.168.169.100";
-    getCheckIp(ip);
+    String ip = "255.255.255.255";
+    System.out.println(getCheckIp(ip));
   }
 
-  private static String getCheckIp(String str)
+  private static String getCheckIp(String ipAddress)
   {
-    
-    return str = "IP address is valid";
+    String notValid = "Ip не валиден";
+    String valid = "Ip валиден";
+    try
+    {
+      if (ipAddress != null && !ipAddress.isEmpty())
+      {
+        String[] ip = ipAddress.split("\\.");
+        if (ip.length != 4)
+        {
+          return notValid;
+        }
+        for (int i = 0; i <= ip.length - 1; i++)
+        {
+          int j = Integer.parseInt(ip[i]);
+          if (j < 0 || j > 255)
+          {
+            return notValid;
+          }
+        }
+        if (ipAddress.endsWith("."))
+        {
+          return notValid;
+        }
+        if (ipAddress.startsWith("."))
+        {
+          return notValid;
+        }
+      }
+      return valid;
+    }
+    catch (NumberFormatException ex)
+    {
+      return notValid;
+    }
   }
 }
