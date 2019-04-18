@@ -7,7 +7,7 @@ public class IPCheck
     String ip = "255.255.255.255";
     System.out.println(getCheckIp(ip));
   }
-
+а
   private static String getCheckIp(String ipAddress)
   {
     String notValid = "Ip не валиден";
