@@ -6,7 +6,7 @@ public class CheckPolindrom
 {
   public static void main(String[] args)
   {
-    String polindrom = "12 Ароза упала на лапу Азора21";
+    String polindrom = "A12345677654321a";
     System.out.println(getStartCheck(polindrom));
   }
 
