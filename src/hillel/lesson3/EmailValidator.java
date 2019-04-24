@@ -13,10 +13,11 @@ public class EmailValidator
 
   public static void main(String[] args)
   {
-    String email = "user-name@mail23.com";
+    String email = "user_name@mail23.com";
     EmailValidator emailValidator = new EmailValidator();
     System.out.println(emailValidator.isValid(email));
   }
+
 
   public boolean isValid(String email)
   {
