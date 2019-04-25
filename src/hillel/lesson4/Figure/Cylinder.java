@@ -22,13 +22,13 @@ public class Cylinder extends Circle
 
   protected double areaCircleCylinder()
   {
-    double area=radius*radius*Math.PI;
+    double area = radius * radius * Math.PI;
     return area;
   }
 
   protected double areaAllCylinder()
   {
-    double areaAll=(circleArea()*2)+(2*Math.PI*radius*heightCylinder);
+    double areaAll = (circleArea() * 2) + (2 * Math.PI * radius * heightCylinder);
     return areaAll;
   }
 

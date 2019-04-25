@@ -22,7 +22,7 @@ public class Circle extends Point
 
   protected double circleArea()
   {
-    double area=radius*radius*Math.PI;
+    double area = radius * radius * Math.PI;
     return area;
   }
 
